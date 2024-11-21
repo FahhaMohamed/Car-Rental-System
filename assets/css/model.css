@@ -1,0 +1,96 @@
+.model {
+    display: none;
+    justify-content: center;
+}
+
+.form p {
+    margin-top: 10px;
+}
+
+.form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px #caf5ffaa;
+    padding: 20px;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+.form select,
+.form textarea,
+.form input[type="date"],
+.form input[type="text"],
+.form input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    display: inline;
+}
+
+.form input[type="radio"] {
+    margin-left: 10px;
+    margin-right:5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form select:focus,
+.form textarea:focus,
+.form input[type="date"]:focus,
+.form input[type="text"]:focus,
+.form input[type="number"]:focus {
+    border-color: #398394;
+    outline: none;
+}
+
+.form button {
+    background-color: #398394;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+}
+
+.form button:hover {
+    background-color: #29606c;
+}
+
+.form-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#close {
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    transition: font-size 0.2s 0.1s;
+}
+
+#close:hover {
+    font-size: 18px;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

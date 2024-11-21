@@ -1,0 +1,42 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    main{
+        margin-left: 70px;
+    }
+
+    
+    .side-bar {
+        width: 70px;
+    }
+    .side-bar .items a {
+        justify-content: center;
+    }
+    .side-bar .items a div {
+        display: none;
+    }
+    .logo div {
+        display: none;
+    }
+    .menu-bar {
+        left: 70px;
+        width: calc(100% - 70px);
+    }
+
+    .footer {
+        width: calc(100% - 70px);
+        margin-left: 70px;
+    }
+
+    .logo img {
+        margin-left: 10px;
+        width: 80px;
+    }
+
+    .footer-about,
+        .footer-links,
+        .footer-contact {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
